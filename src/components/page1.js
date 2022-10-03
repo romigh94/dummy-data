@@ -17,16 +17,16 @@ function Page1() {
 const fetch = async () => {
   const url = "https://reqres.in/api/users"
 
-  const res = axios.get(url)
-  .then((res) => {
-    console.log(res.data.data)
-    setProfiles(res.data.data)
+  axios.get(url)
+    .then((res) => {
+      console.log(res.data.data)
+      setProfiles(res.data.data)
 
-  })
-  .catch((error) => {
-      console.log(error)
-  })
-}
+    })
+    .catch((error) => {
+        console.log(error)
+    })
+  }
 
 const handleClick = () => {
     navigate("/page2")
@@ -40,7 +40,7 @@ const handleClick = () => {
       {profiles.map((profile, index) => {
           return (
             <div key={index} className="profileCard">
-                <img src={profile.avatar} className="avatar"></img>
+                <img src={profile.avatar} className="avatar" alt="vendre-data"></img>
                 <h3>{profile.first_name} {profile.last_name} </h3>
                 <a href="mailto:"{...profile.email}>{profile.email}</a>
             </div>
@@ -49,8 +49,8 @@ const handleClick = () => {
 
     </div>
 
-        <button>Previous</button>
-        <button onClick={() => {handleClick()}}>Next</button>
+        <button className='PrevBtn1'>Previous</button>
+        <button className='NextBtn1' onClick={() => {handleClick()}}>Next</button>
 
   </div>
   );
