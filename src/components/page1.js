@@ -49,8 +49,8 @@ const handleClick = () => {
 
     </div>
 
-        <button className='PrevBtn1'>Previous</button>
-        <button className='NextBtn1' onClick={() => {handleClick()}}>Next</button>
+        <button className='disabledBtn'>Previous</button>
+        <button className='activeBtn' onClick={() => {handleClick()}}>Next</button>
 
   </div>
   );

@@ -21,10 +21,8 @@
   padding: 10px;
 }
 
-.NextBtn1,
-.NextBtn2,
-.PrevBtn1,
-.PrevBtn2 {
+.disabledBtn,
+.activeBtn {
   margin: 0 auto;
   width: 150px;
   height: 50px;
@@ -35,13 +33,11 @@
   margin-top: 40px;
 }
 
-.NextBtn1:hover,
-.PrevBtn2:hover {
+.activeBtn:hover {
   background-color: rgb(160, 131, 189);
 }
 
-.NextBtn2:hover,
-.PrevBtn1:hover {
+.disabledBtn:hover {
   cursor: default;
 }
 

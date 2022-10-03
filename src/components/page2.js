@@ -50,8 +50,8 @@ function Page1() {
   
       </div>
 
-        <button className="PrevBtn2" onClick={() => {handleClick()}}>Previous</button>
-        <button className="NextBtn2">Next</button>
+        <button className="activeBtn" onClick={() => {handleClick()}}>Previous</button>
+        <button className="disabledBtn">Next</button>
   
     </div>
     );
